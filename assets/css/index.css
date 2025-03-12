@@ -180,3 +180,292 @@ body {
 .banner-connect:hover {
   padding: 7px 15px 7px 15px;
 }
+
+/* about section */
+.sub-head p {
+  font-family: var(--secondaryFontFamily);
+  font-weight: 400;
+  color: #2b2a29;
+  font-size: 18px;
+}
+.sub-head {
+  border-bottom: 1px solid #00213280;
+  padding-bottom: 20px;
+}
+.about-main-head h2 {
+  font-size: 75px;
+  max-width: 870px;
+  font-family: "Poppins";
+  font-weight: 400;
+  line-height: 95px;
+  text-transform: capitalize;
+  color: #104386;
+  margin-top: 20px;
+}
+.about-main-head .fade-text {
+  display: inline-block;
+  /* background: linear-gradient(
+    to right,
+    #104386 60%,
+    rgba(255, 255, 255, 0.2) 100%
+  ); */
+  background: linear-gradient(
+    to right,
+    #104386 20%,
+    rgba(255, 255, 255, 0.1) 200%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+
+  mask-image: linear-gradient(to right, black 80%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, black 80%, transparent 100%);
+}
+.about-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1.5fr;
+  gap: 30px;
+  padding-top: 30px;
+}
+.about-description p {
+  font-family: "Libre Franklin";
+  font-weight: 400;
+  line-height: 27px;
+  color: #2b2a29e5;
+}
+.about-description p span {
+  font-weight: 600;
+}
+.learn-more {
+  display: flex;
+  align-items: end;
+  justify-content: flex-start;
+}
+.learn-more-info {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.line {
+  background: linear-gradient(
+    123.7deg,
+    #2a5ea5 -4.44%,
+    rgba(42, 94, 165, 0.95) 50.05%,
+    #006633 100%
+  );
+  width: 25px;
+  height: 10px;
+}
+.learn-more-info {
+  cursor: pointer;
+}
+.learn-more-info p {
+  color: #f7ffef;
+  font-family: var(--primaryFontFamily);
+  font-weight: 500;
+  position: absolute;
+  left: 16.5%;
+  font-size: 18px;
+}
+.arrow {
+  position: absolute;
+  right: 8%;
+  top: 30%;
+}
+.unionimg {
+  max-width: 250px;
+}
+/* about section */
+
+/* whow we are */
+#whoweare {
+  background-image: url(../img/service.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* height: 100vh; */
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+}
+.who-we-are {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 50px;
+  padding: 5% 2%;
+}
+.who-we-desc {
+  color: #fcfff9d9;
+  font-family: "Libre Franklin";
+  font-weight: 400;
+  line-height: 27px;
+  font-size: 14px;
+}
+.who-we-h2 {
+  color: #fcfff9f2;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 65px;
+  line-height: 75px;
+  padding-left: 80px;
+  text-transform: capitalize;
+}
+.fade-text2 {
+  display: inline-block;
+  background: linear-gradient(
+    to right,
+    #fcfff9f2 5%,
+    rgba(255, 255, 255, 0.05) 200%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+
+  mask-image: linear-gradient(to right, black 80%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, black 80%, transparent 100%);
+}
+.who-we-learn {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+.who-we-learn img {
+  max-width: 210px;
+}
+.who-we-are-slide img {
+  max-width: 325px;
+}
+.who-we-are-slide {
+  display: flex;
+  align-items: flex-start;
+  justify-content: end;
+  gap: 20px;
+  padding-right: 2%;
+  padding-bottom: 5%;
+}
+.slider-arrow {
+  text-align: end;
+  color: #fff;
+  position: relative;
+  top: -50px;
+  right: 3%;
+  font-size: 18px;
+  cursor: pointer;
+}
+/* whow we are */
+
+/* looking for */
+.looking-h2 {
+  font-size: 65px;
+  font-family: "Poppins";
+  font-weight: 400;
+  line-height: 95px;
+  /* text-transform: capitalize; */
+  color: #104386;
+  margin-top: 20px;
+  text-align: center;
+}
+.looking-h2 .fade-text {
+  display: inline-block;
+  /* background: linear-gradient(
+    to right,
+    #104386 60%,
+    rgba(255, 255, 255, 0.2) 100%
+  ); */
+  background: linear-gradient(
+    to right,
+    #104386 20%,
+    rgba(255, 255, 255, 0.1) 200%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+
+  mask-image: linear-gradient(to right, black 80%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, black 80%, transparent 100%);
+}
+.looking-slide {
+  position: relative;
+}
+.slide1 {
+  position: relative;
+  top: -37px;
+  left: 10%;
+  display: inline-block;
+  z-index: 1;
+}
+.slide1 img {
+  max-width: 550px;
+}
+.slide2 {
+  position: absolute;
+  top: 10%;
+  right: 13%;
+}
+.slide2 img {
+  max-width: 300px;
+}
+.slide3 {
+  position: absolute;
+  right: 34%;
+  bottom: -6%;
+}
+.slide3 img {
+  max-width: 180px;
+}
+.slide4 {
+  position: absolute;
+  left: 33%;
+  bottom: -20%;
+}
+.slide4 img {
+  max-width: 140px;
+}
+.gimg {
+  position: absolute;
+  max-width: 160px;
+  left: 10%;
+  top: 20%;
+}
+.slide1-gain {
+  position: absolute;
+  top: 22%;
+  left: 22%;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  color: #fcfff9e5;
+}
+.slide1-gain h1 {
+  font-size: 100px;
+}
+.gain-text h2 {
+  font-weight: 500;
+  font-size: 42px;
+}
+.gain-text p {
+  color: #fcfff9d9;
+  font-family: var(--secondaryFontFamily);
+  font-weight: 400;
+}
+/* looking for */
+
+/* media query */
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .banner-head {
+    font-size: 108px;
+  }
+  .lets-talk {
+    top: 53%;
+    left: 59%;
+  }
+  .lets-talk img {
+    max-width: 170px;
+  }
+  .bg-banner1 {
+    top: 18.5%;
+    left: 4%;
+  }
+}
+/* media query */
