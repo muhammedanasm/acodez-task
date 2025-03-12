@@ -222,6 +222,14 @@ body {
   mask-image: linear-gradient(to right, black 80%, transparent 100%);
   -webkit-mask-image: linear-gradient(to right, black 80%, transparent 100%);
 }
+#about {
+  background-image: url(../img/aboutbg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 783px;
+  position: relative;
+  z-index: 1;
+}
 .about-layout {
   display: grid;
   grid-template-columns: 1fr 1.5fr 1.5fr;
@@ -286,12 +294,15 @@ body {
   /* height: 100vh; */
   border-bottom-left-radius: 60px;
   border-bottom-right-radius: 60px;
+  position: relative;
+  top: -80px;
+  z-index: 0;
 }
 .who-we-are {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 50px;
-  padding: 5% 2%;
+  padding: 10% 2% 5% 2%;
 }
 .who-we-desc {
   color: #fcfff9d9;
@@ -335,6 +346,7 @@ body {
 .who-we-are-slide img {
   max-width: 325px;
 }
+
 .who-we-are-slide {
   display: flex;
   align-items: flex-start;
@@ -454,12 +466,18 @@ body {
 /* service */
 #service {
   margin-top: 50px;
+  position: relative;
 }
-.service-dots {
-  background-image: url(../img/Dot\ Grid.png);
+.service-dotsimg {
+  /* background-image: url(../img/Dot\ Grid.png);
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   height: 160px;
+  position: absolute;
+  top: 0%;
+  position: absolute;
+  top: 0%;
+  width: 100%;
 }
 swiper-container {
   width: 100%;
@@ -481,9 +499,172 @@ swiper-slide img {
   height: 100%;
   object-fit: cover;
 }
+.services-section h2 {
+  font-family: var(--primaryFontFamily);
+  font-weight: 400;
+  font-size: 80px;
+  color: #2b2a29;
+}
+.services {
+  margin: 40px 0px;
+}
+.services h2 {
+  font-size: 60px;
+  font-family: "Poppins";
+  font-weight: 400;
+  line-height: 95px;
+  /* text-transform: capitalize; */
+  color: #104386;
+}
+.services h2 .fade-text {
+  display: inline-block;
+  /* background: linear-gradient(to right, #104386 60%, rgba(255, 255, 255, 0.2) 100%); */
+  background: linear-gradient(
+    to right,
+    #104386 0%,
+    rgba(255, 255, 255, 0.1) 200%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  mask-image: linear-gradient(to right, black 80%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, black 80%, transparent 100%);
+}
+.slide-one {
+  position: relative;
+}
+.slide-two {
+  position: relative;
+}
+.circleimg {
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  max-width: 90px;
+  max-height: 90px;
+}
+.circleimg2 {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  max-width: 90px;
+  max-height: 90px;
+}
+.mr-img {
+  position: absolute;
+  bottom: 5%;
+  left: 8%;
+  max-width: 65px;
+  max-height: 65px;
+}
+.react-img {
+  position: absolute;
+  top: 5%;
+  left: 8%;
+  max-width: 65px;
+  max-height: 65px;
+}
+.slide-para {
+  position: absolute;
+  top: 0%;
+  text-transform: uppercase;
+  color: #fcfff9;
+  font-family: var(--primaryFontFamily);
+  font-weight: 500;
+  text-align: left;
+  font-size: 22px;
+  line-height: 46px;
+  padding: 20px;
+}
+.slide-para2 {
+  position: absolute;
+  bottom: 0%;
+  text-transform: uppercase;
+  color: #fcfff9;
+  font-family: var(--primaryFontFamily);
+  font-weight: 500;
+  text-align: left;
+  font-size: 22px;
+  line-height: 46px;
+  padding: 20px;
+}
+.slide-para2 span {
+  font-size: 28px;
+}
+.slide-para span {
+  font-size: 28px;
+}
+
+.circle-text h2 {
+  font-family: var(--secondaryFontFamily);
+  font-weight: 400;
+  color: #fcfff9;
+  font-size: 25px;
+  position: absolute;
+  right: 26px;
+  bottom: 10%;
+}
+.circle-text2 h2 {
+  font-family: var(--secondaryFontFamily);
+  font-weight: 400;
+  color: #fcfff9;
+  font-size: 25px;
+  position: absolute;
+  right: 26px;
+  top: 10%;
+}
 /* service */
 
+/* thoughtflow */
+.thought-flow {
+  margin: 2% 5% 2% 5%;
+  padding-bottom: 1%;
+  border-bottom: 1px solid #00213280;
+}
+.thought-flow p {
+  color: #2b2a29;
+  font-family: var(--secondaryFontFamily);
+  font-weight: 400;
+  font-size: 14px;
+}
+.thoutflow-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.flow-right {
+  text-align: end;
+}
+.flow-center {
+  text-align: center;
+}
+#thoughtflow {
+  background-image: url(../img/bgthought.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* thoughtflow */
+
 /* media query */
+
+@media (min-width: 1401px) {
+  .slide2 {
+    position: absolute;
+    top: 12%;
+    right: 18%;
+  }
+  .slide3 {
+    position: absolute;
+    right: 38%;
+    bottom: -3%;
+  }
+  .slide4 {
+    position: absolute;
+    left: 28%;
+    bottom: -22%;
+  }
+}
+
 @media (min-width: 1200px) and (max-width: 1400px) {
   .banner-head {
     font-size: 108px;
