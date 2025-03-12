@@ -451,6 +451,38 @@ body {
 }
 /* looking for */
 
+/* service */
+#service {
+  margin-top: 50px;
+}
+.service-dots {
+  background-image: url(../img/Dot\ Grid.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 160px;
+}
+swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* service */
+
 /* media query */
 @media (min-width: 1200px) and (max-width: 1400px) {
   .banner-head {
