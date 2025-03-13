@@ -21,6 +21,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- aos animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/index.css" />
   </head>
   <body>
@@ -74,18 +76,24 @@
         <div class="sub-head">
           <p>what makes us unique</p>
         </div>
-        <div class="about-main-head">
+        <div
+          class="about-main-head"
+          data-aos="fade-up"
+          data-aos-duration="3000"
+        >
           <h2>
             redefining success for <span class="fade-text">B2B Brands</span>
           </h2>
         </div>
-        <div class="about-layout">
+        <div class="about-layout" data-aos="fade-up" data-aos-duration="3000">
           <div class="learn-more">
             <div class="learn-more-info">
-              <img class="unionimg" src="./assets/img/Union.png" alt="" />
-              <p>lEARN MORE</p>
+              <div class="hover-effect-container">
+                <img class="unionimg" src="./assets/img/Union.png" alt="" />
+                <p>lEARN MORE</p>
 
-              <img class="arrow" src="./assets/img/arrow.png" alt="" />
+                <img class="arrow" src="./assets/img/arrow.png" alt="" />
+              </div>
             </div>
           </div>
           <div class="about-description">
@@ -144,9 +152,18 @@
         </div>
       </div>
       <div class="who-we-are-slide">
-        <img src="./assets/img/who1.png" alt="" />
-        <img src="./assets/img/who2.png" alt="" />
-        <img src="./assets/img/who3.png" alt="" />
+        <div class="image-container">
+          <img src="./assets/img/who1.png" alt="" />
+          <div class="overlay"></div>
+        </div>
+        <div class="image-container">
+          <img src="./assets/img/who2.png" alt="" />
+          <div class="overlay"></div>
+        </div>
+        <div class="image-container image-containermob">
+          <img src="./assets/img/who3.png" alt="" />
+          <div class="overlay"></div>
+        </div>
       </div>
       <div class="slider-arrow">
         <i class="fa-solid fa-arrow-right"></i>
@@ -191,7 +208,7 @@
     <section id="service">
       <div class="service-dots">
         <img class="service-dotsimg" src="./assets/img/Dot Grid.png" alt="" />
-        <div class="container">
+        <div class="container" style="padding-bottom: 2%">
           <div class="services-section">
             <h2>Services</h2>
           </div>
@@ -206,7 +223,7 @@
               class="mySwiper"
               slides-per-view="1"
               space-between="10"
-              autoplay='{"delay": 2500, "disableOnInteraction": false}'
+              autoplay='{"delay": 5000, "disableOnInteraction": false}'
               loop="true"
               breakpoints='{
       "640": { "slidesPerView": 2, "spaceBetween": 10 },
@@ -413,18 +430,80 @@
       </div>
       <div class="thoutflow-section">
         <div class="flow-left">
-          <img src="./assets/img/b1.png" alt="" />
+          <img class="desktopthoghtflow" src="./assets/img/b1.png" alt="" />
+          <img class="mobimgthoughtflow" src="./assets/img/mobimg.png" alt="" />
         </div>
-        <div class="flow-center">jkshfs</div>
+        <div class="flow-center" data-aos="fade-up" data-aos-duration="3000">
+          <div class="brand-identity">
+            <p>Oct 15, 2024</p>
+            <p class="blogline"></p>
+            <p>Brand Identity</p>
+          </div>
+          <div class="brand-h2">
+            <h2>
+              Define a unique and clear brand identity that resonates with the
+              relevant target audience
+            </h2>
+          </div>
+          <div class="view-blog">
+            <button>View Blog</button>
+          </div>
+        </div>
         <div class="flow-right"><img src="./assets/img/b2.png" alt="" /></div>
       </div>
     </section>
     <!-- thoughtflow end -->
+
+    <!-- footer -->
+    <section id="footer">
+      <div class="container-footer">
+        <img class="footerdots" src="./assets/img/footerdots.png" alt="" />
+        <div class="footer-head">
+          <h2>Achieve your business goals today. Book a discovery call now!</h2>
+          <img
+            class="desktopconnect"
+            src="./assets/img/footerconnect.png"
+            alt=""
+          />
+          <img class="mobconnect" src="./assets/img/mobconnect.png" alt="" />
+        </div>
+        <div class="wistree-footer">
+          <img class="footbg" src="./assets/img/foot.png" alt="" />
+          <img class="wisterimg" src="./assets/img/wistree.png" alt="" />
+        </div>
+        <div class="footer-navlinks">
+          <div class="social-media">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+          <div class="nav-links">
+            <p><a href="">About</a></p>
+            <p><a href="">Service</a></p>
+            <p><a href="">Blog</a></p>
+            <p><a href="">Case Study</a></p>
+            <p><a href="">Work</a></p>
+            <p><a href="">Career</a></p>
+          </div>
+          <div class="copyright">
+            <p>© 2024 wisetree. All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer end -->
 
     <!-- custom cursor -->
     <script src="./assets/js/cursor.js"></script>
 
     <!-- carousel -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <!-- aos animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
